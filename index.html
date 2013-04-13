@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ed Balls Ipsum</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="edballsipsum.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				font-family: Montserrat, "Gill Sans", Helvetica, Arial, Droid Sans, sans-serif;
+				color: #444;
+				background: #f8f8f8);
+			}
+			header, .balls, footer {
+				max-width: 500px;
+				margin: 2em auto;
+			}
+			a {
+				/* Ed Balls red shamelessly stolen from his website */
+				color: #D42B1E;
+				text-decoration: none;
+			}
+			h1 {
+				color: #D42B1E;
+			}
+			label {
+				display: block;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Ed Balls Ipsum</h1>
+			<section id="controls">
+				<label for="ball-slider">Ed Balls count</label>
+				<input id="ball-slider" name="ball-slider" type="range" min="1" max="10" value="3" />
+				<span id="ball-counter">3</span>
+			</section>
+		</header>
+
+		<div id="ed-balls" class="balls">
+
+		</div>
+
+		<footer>
+			<p>An Ed Balls thing by <a href="http://ntlk.net">@ntlk</a></p>
+		</footer>
+
+	</body>
+</html>
+
