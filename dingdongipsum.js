@@ -10,17 +10,17 @@ function generate_a_paragraph() {
 }
 
 function generate_a_sentence(word_count) {
-	var balls = "ed balls";
-	var sentence = balls;
+	var dingdong = "ding dong";
+	var sentence = dingdong;
 	var punctuation = [" ", " ", " ", ", "];
 	for (var i = 0; i < word_count; i++) {
-		sentence = sentence + punctuation[Math.floor(Math.random()*4)] + balls;
+		sentence = sentence + punctuation[Math.floor(Math.random()*4)] + dingdong;
 	}
 	sentence = format_sentence(sentence);
 	return sentence;
 }
 
-function generate_ed_balls_ipsum(paragraph_count) {
+function generate_dingdong_ipsum(paragraph_count) {
 	var ipsum = "";
 	for (var i = 0; i < paragraph_count; i++) {
 		var paragraph = generate_a_paragraph();
@@ -31,7 +31,7 @@ function generate_ed_balls_ipsum(paragraph_count) {
 }
 
 function insert_paragraphs_into_page(ipsum) {
-	$('#ed-balls').html(ipsum);
+	$('#dingdong').html(ipsum);
 }
 
 function format_sentence(sentence) {
@@ -40,12 +40,12 @@ function format_sentence(sentence) {
 
 
 $(document).ready(function(){
-	generate_ed_balls_ipsum(3);
+	generate_dingdong_ipsum(3);
 
 	$('#ball-slider').on('change', function(){
 		var paragraph_count = $('#ball-slider').val();
 		$('#ball-counter').html(paragraph_count);
 
-		generate_ed_balls_ipsum(paragraph_count);
+		generate_dingdong_ipsum(paragraph_count);
 	});
 });
